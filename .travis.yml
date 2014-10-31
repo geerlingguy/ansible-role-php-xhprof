@@ -32,5 +32,5 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  # Run script to test if XHProf is available and working.
-  - php tests/xhprof-test.php
+  # Check if the xhprof module is loaded.
+  - php -m | grep -i xhprof

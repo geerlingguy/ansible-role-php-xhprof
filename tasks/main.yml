@@ -28,3 +28,9 @@
     group: root
     mode: 0644
   notify: restart webserver
+
+- name: Ensure XHProf output directory exists.
+  file:
+    path: "{{ xhprof_output_dir }}"
+    state: directory
+    mode: 0777
