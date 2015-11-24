@@ -23,7 +23,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
     - hosts: webservers
       roles:
-        - { role: geerlingguy.php-xdebug }
+        - { role: geerlingguy.php-xhprof }
 
 ## License
 
