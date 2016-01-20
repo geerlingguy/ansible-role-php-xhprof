@@ -13,6 +13,8 @@
 - name: Get XHProf info if installed.
   command: "pecl info xhprof"
   register: "xhprof_info"
+  changed_when: "not '0.9.4' in xhprof_info.stdout"
+  failed_when: false
 
 # Install and configure XHProf.
 - name: Install XHProf using PECL.
