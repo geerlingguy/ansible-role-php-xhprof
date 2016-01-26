@@ -9,6 +9,13 @@
 - include: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
+# Get XHProf info if installed.
+- name: Get XHProf info if installed.
+  command: "pecl info xhprof"
+  register: "xhprof_info"
+  changed_when: "not '0.9.4' in xhprof_info.stdout"
+  failed_when: false
+
 # Install and configure XHProf.
 - name: Install XHProf using PECL.
   command: "pecl install {{ item }}"
@@ -19,6 +26,7 @@
     # Manual channel installation required for certain PEAR versions.
     - "channel://pecl.php.net/xhprof-0.9.4"
     - xhprof
+  when: "not '0.9.4' in xhprof_info.stdout"
 
 - name: Ensure PHP configuration directories exist.
   file:
