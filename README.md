@@ -12,7 +12,9 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    TODO
+    xhprof_output_dir: /var/tmp/xhprof
+
+Directory where XHProf runs are stored.
 
 ## Dependencies
 
