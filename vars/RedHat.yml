@@ -1,0 +1,4 @@
+---
+php_xhprof_config_filename: xhprof.ini
+php_xhprof_config_dirs:
+  - /etc/php.d
