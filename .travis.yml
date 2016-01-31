@@ -36,3 +36,6 @@ script:
 
   # Run script to test if XHProf is available and working.
   - php tests/xhprof-test.php
+
+notifications:
+   webhooks: https://galaxy.ansible.com/api/v1/notifications/
