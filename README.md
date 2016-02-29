@@ -27,7 +27,6 @@ Directory where the XHProf UI is stored.
 ## Dependencies
 
   - geerlingguy.php
-  - geerlingguy.php-pecl
 
 ## Example Playbook
 

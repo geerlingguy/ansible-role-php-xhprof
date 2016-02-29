@@ -16,7 +16,7 @@ install:
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
 
   # Install dependencies.
-  - ansible-galaxy install geerlingguy.php geerlingguy.php-pecl
+  - ansible-galaxy install geerlingguy.php
 
 script:
   # Check the role/playbook's syntax.
