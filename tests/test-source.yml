@@ -1,0 +1,6 @@
+---
+- hosts: all
+
+  roles:
+    - geerlingguy.php
+    - role_under_test
