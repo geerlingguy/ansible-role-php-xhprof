@@ -1,4 +1,6 @@
 ---
+php_xhprof_module_path: /usr/lib/php5/modules
+
 php_xhprof_lib_dir: /usr/share/php/xhprof_lib
 php_xhprof_html_dir: /usr/share/php/xhprof_html
 

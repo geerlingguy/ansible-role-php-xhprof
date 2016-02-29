@@ -1,2 +1,4 @@
 ---
+workspace: /root
+
 xhprof_output_dir: /var/tmp/xhprof
