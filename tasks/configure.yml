@@ -4,6 +4,7 @@
     path: "{{ item }}"
     state: directory
     mode: 0755
+    follow: true
   with_items: "{{ php_xhprof_config_dirs }}"
 
 - name: Copy XHProf INI into various other conf folders.

@@ -54,7 +54,7 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Run script to test if XHProf is available and working.
-  - 'sudo docker exec --tty "$(cat ${container_id})" env TERM=xterm php tests/xhprof-test.php'
+  - 'sudo docker exec --tty "$(cat ${container_id})" env TERM=xterm php /etc/ansible/roles/role_under_test/tests/xhprof-test.php'
 
   # Clean up
   - 'sudo docker stop "$(cat ${container_id})"'

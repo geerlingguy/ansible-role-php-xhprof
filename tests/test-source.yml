@@ -1,6 +1,9 @@
 ---
 - hosts: all
 
+  vars:
+    php_enable_webserver: false
+
   roles:
     - geerlingguy.php
     - role_under_test
