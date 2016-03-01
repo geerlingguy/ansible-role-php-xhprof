@@ -12,6 +12,10 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
+    workspace: /root
+
+Where XHProf setup files will be downloaded and built.
+
     xhprof_output_dir: /var/tmp/xhprof
 
 Directory where XHProf runs are stored.
