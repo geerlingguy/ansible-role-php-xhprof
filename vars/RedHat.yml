@@ -2,5 +2,3 @@
 php_xhprof_module_path: /usr/lib64/php/modules
 
 php_xhprof_config_filename: xhprof.ini
-php_xhprof_config_dirs:
-  - /etc/php.d

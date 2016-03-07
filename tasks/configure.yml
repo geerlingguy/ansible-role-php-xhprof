@@ -5,7 +5,7 @@
     state: directory
     mode: 0755
     follow: true
-  with_items: "{{ php_xhprof_config_dirs }}"
+  with_items: "{{ php_extension_conf_paths }}"
 
 - name: Copy XHProf INI into various other conf folders.
   template:
@@ -14,5 +14,5 @@
     owner: root
     group: root
     mode: 0644
-  with_items: "{{ php_xhprof_config_dirs }}"
+  with_items: "{{ php_extension_conf_paths }}"
   notify: restart webserver
