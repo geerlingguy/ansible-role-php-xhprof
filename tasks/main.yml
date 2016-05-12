@@ -21,6 +21,7 @@
     src: "{{ workspace }}/xhprof.tar.gz"
     dest: "{{ workspace }}"
     copy: no
+  when: xhprof_download_get_url.changed
 
 - name: Build XHProf.
   shell: >
