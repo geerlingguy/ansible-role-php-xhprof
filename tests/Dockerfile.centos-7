@@ -18,7 +18,7 @@ RUN yum -y install git ansible sudo
 RUN yum clean all
 
 RUN yum install -y unzip
-RUN yum groupinstall "Development Tools"
+RUN yum groupinstall -y "Development Tools"
 
 # Disable requiretty
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
