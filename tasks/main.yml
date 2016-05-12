@@ -13,6 +13,7 @@
   get_url:
     url: "{{ xhprof_download_url }}"
     dest: "{{ workspace }}/xhprof.tar.gz"
+  register: xhprof_download_get_url
 
 # TODO: In 2.0, we can set the 'src' to the URL from the get_url task above and
 # cut out one extra task :)
