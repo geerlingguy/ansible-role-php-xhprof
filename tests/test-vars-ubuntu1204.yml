@@ -21,3 +21,7 @@ php_extension_conf_paths:
   - /etc/php5/cli/conf.d
 php_fpm_daemon: php5-fpm
 php_fpm_conf_path: "/etc/php5/fpm"
+
+# PHP 5.6-compatible 'official' XHProf.
+xhprof_download_url: https://github.com/phacility/xhprof/archive/master.tar.gz
+xhprof_download_folder_name: xhprof-master
