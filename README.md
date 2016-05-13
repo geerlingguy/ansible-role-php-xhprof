@@ -21,7 +21,7 @@ Where XHProf setup files will be downloaded and built.
 
 The URL from which XHProf will be downloaded. Note that this default is for the PHP 7-compatible version of XHProf. If you're using PHP 5.x, you should probably switch to the 'official' upstream source: `https://github.com/phacility/xhprof/archive/master.tar.gz`.
 
-    xhprof_output_dir: /var/tmp/xhprof
+    xhprof_output_dir: /tmp
 
 Directory where XHProf runs are stored.
 
