@@ -7,6 +7,7 @@
   package: "name={{ item }} state=installed"
   with_items:
     - make
+    - gcc
     - unzip
     - graphviz
 
