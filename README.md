@@ -1,6 +1,6 @@
 # Ansible Role: PHP-XHProf
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-php-xhprof.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-php-xhprof)
+[![CI](https://github.com/geerlingguy/ansible-role-php-xhprof/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-php-xhprof/actions?query=workflow%3ACI)
 
 Installs PHP [XHProf](http://php.net/manual/en/book.xhprof.php) on Linux servers.
 
